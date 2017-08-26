@@ -1,6 +1,9 @@
 # Sql-learn
 Sql语句的学习
 
+快速学习网址:  
+<http://www.runoob.com/sql/sql-top.html>
+
 # 什么是SQL？
 SQL 是用于访问和处理数据库的标准的计算机语言； 
 - SQL，指结构化查询语言，全称是 Structured Query Language。
@@ -45,14 +48,48 @@ WHERE 子句用于提取那些满足指定标准的记录。
             
  ### WHERE 子句中的运算符
  
- 运算符    | 描述  
- ————————|———————
- = | 等于   
- <> |  不等于。注释：在 SQL 的一些版本中，该操作符可被写成 !=   
-    
-                    
-First Header  | Second Header
-------------- | -------------
-Content Cell  | Content Cell
-Content Cell  | Content Cell 
+运算符  | 描述  
+------- | ------
+= | 等于   
+<> |  不等于。注释：在 SQL 的一些版本中，该操作符可被写成 !=   
+> | 大于
+< | 小于
+>= | 大于等于
+<= | 小于等于
+BETWEEN | 在某个范围内
+LIKE | 搜索某种模式
+IN | 指定针对某个列的多个可能值
+
+# SQL AND & OR 运算符
+如果第一个条件和第二个条件都成立，则 AND 运算符显示一条记录；  
+如果第一个条件和第二个条件中只要有一个成立，则 OR 运算符显示一条记录；
+
+> SELECT * FROM Websites WHERE country='XX' AND b > 50;
+
+# SQL ORDER BY 关键字
+ORDER BY 关键字用于对结果集按照一个列或者多个列进行排序;  
+ORDER BY 关键字默认按照升序对记录进行排序。如果需要按照降序对记录进行排序，您可以使用 DESC 关键字;  
+> SELECT column_name,column_name FROM table_name ORDER BY column_name ASC|DESC;  
+asc:从小到大的顺序排序  
+desc:从大到小的顺序排序  
+
+# SQL INSERT INTO 语法
+> INSERT INTO table_name VALUES (value1,value2,value3,...);
+或
+> INSERT INTO table_name (column1,column2,column3,...) VALUES (value1,value2,value3,...);
+
+# SQL UPDATE 语句
+> UPDATE table_name SET column1=value1,column2=value2,...
+WHERE some_column=some_value;
+                     
+# SQL DELETE 语句
+用于删除表中的行  
+> DELETE FROM table_name WHERE some_column=some_value;
+### 删除所有数据
+> DELETE FROM table_name;
+或
+> DELETE * FROM table_name;
+
+
+
 
