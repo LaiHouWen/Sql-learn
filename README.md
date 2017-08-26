@@ -31,3 +31,22 @@ SQL 是用于访问和处理数据库的标准的计算机语言；
 
 # SQL SELECT 语句
       SELECT column_name,column_name FROM table_name;
+  或
+      SELECT * FROM table_name;
+
+# SQL SELECT DISTINCT 语句
+在表中，一个列可能会包含多个重复值，有时您也许希望仅仅列出不同（distinct）的值，  
+DISTINCT 关键词用于返回唯一不同的值
+            SELECT DISTINCT column_name,column_name FROM table_name;
+
+# SQL WHERE 子句
+WHERE 子句用于提取那些满足指定标准的记录。
+            SELECT * FROM Websites WHERE country='CN';
+            
+ ### WHERE 子句中的运算符
+    |运算符    |描述     |
+    |=      |等于   |
+    | <>      |  不等于。注释：在 SQL 的一些版本中，该操作符可被写成 !=     |
+    
+
+
