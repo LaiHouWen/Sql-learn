@@ -48,10 +48,10 @@ WHERE 子句用于提取那些满足指定标准的记录。
             
  ### WHERE 子句中的运算符
  
-运算符  | 描述  
-------- | ------
+运算符    | 描述
+----------- | -------------
 = | 等于   
-<> |  不等于。注释：在 SQL 的一些版本中，该操作符可被写成 !=   
+<> | 不等于
 > | 大于
 < | 小于
 >= | 大于等于
@@ -59,6 +59,17 @@ WHERE 子句用于提取那些满足指定标准的记录。
 BETWEEN | 在某个范围内
 LIKE | 搜索某种模式
 IN | 指定针对某个列的多个可能值
+
+
+First Header  | Second Header
+------------- | -------------
+Content Cell  | Content Cell
+Content Cell  | Content Cell 
+Content Cell  | Content Cell
+Content Cell  | Content Cell 
+Content Cell  | Content Cell
+Content Cell  | Content Cell 
+
 
 # SQL AND & OR 运算符
 如果第一个条件和第二个条件都成立，则 AND 运算符显示一条记录；  
