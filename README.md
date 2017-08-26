@@ -30,7 +30,4 @@ SQL 是用于访问和处理数据库的标准的计算机语言；
 - DROP INDEX - 删除索引
 
 # SQL SELECT 语句
-
-<?
-SELECT column_name,column_name
-FROM table_name;>
+      SELECT column_name,column_name FROM table_name;
