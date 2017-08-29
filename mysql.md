@@ -111,6 +111,34 @@ cmd 命令窗口：
 ## 字符串类型
   字符串类型指CHAR、VARCHAR、BINARY、VARBINARY、BLOB、TEXT、ENUM和SET;  
   
+|类型	|大小|	用途|
+|:----|:-----|:-----|
+|CHAR|	0-255字节|	定长字符串|
+|VARCHAR|	0-65535 字节|	变长字符串|
+|TINYBLOB|	0-255字节	|不超过 255 个字符的二进制字符串|
+|TINYTEXT|	0-255字节|	短文本字符串|
+|BLOB |	0-65 535字节	|二进制形式的长文本数据|
+|TEXT |	0-65 535字节	|长文本数据|
+|MEDIUMBLOB|	0-16 777 215字节	|二进制形式的中等长度文本数据|
+|MEDIUMTEXT|	0-16 777 215字节	|中等长度文本数据|
+|LONGBLOB|	0-4 294 967 295字节	|二进制形式的极大文本数据|
+|LONGTEXT|	0-4 294 967 295字节	|极大文本数据|
   
-  
-  
+## 创建MySQL数据表需要以下信息：
+- 表名
+- 表字段名
+- 定义每个表字段
+创建MySQL数据表的SQL通用语法：  
+-> CREATE TABLE table_name (column_name column_type);
+eg:
+CREATE TABLE IF NOT EXISTS `runoob_tbl`(
+   `runoob_id` INT UNSIGNED AUTO_INCREMENT,
+   `runoob_title` VARCHAR(100) NOT NULL,
+   `runoob_author` VARCHAR(40) NOT NULL,
+   `submission_date` DATE,
+   PRIMARY KEY ( `runoob_id` )
+)ENGINE=InnoDB DEFAULT CHARSET=utf8;
+
+
+
+
